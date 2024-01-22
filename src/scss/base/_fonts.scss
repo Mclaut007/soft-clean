@@ -1,17 +1,20 @@
 // Пример подключения скачанных в проект шрифтов
 
-// @font-face {
-// 	font-family: 'gilroy-regular';
-// 	src: url('../fonts/Gilroy-Regular.woff2') format('woff2'),
-// 		 url('../fonts/Gilroy-Regular.woff') format('woff');
-// }
-// @font-face {
-// 	font-family: 'gilroy-medium';
-// 	src: url('../fonts/Gilroy-Medium.woff2') format('woff2'),
-// 		 url('../fonts/Gilroy-Medium.woff') format('woff');
-// }
-// @font-face {
-// 	font-family: 'gilroy-bold';
-// 	src: url('../fonts/Gilroy-Bold.woff2') format('woff2'),
-// 		 url('../fonts/Gilroy-Bold.woff') format('woff');
-// }
+@font-face {
+  font-family: "Mont-Regular";
+  src:
+    url("./../fonts/Mont-Regular.woff2") format("woff2"),
+    url("./../fonts/Mont-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Mont-Semibold";
+  src:
+    url("./../fonts/Mont-Semibold.woff2") format("woff2"),
+    url("./../fonts/Mont-Semibold.woff") format("woff");
+}
+@font-face {
+  font-family: "Mont-Bold";
+  src:
+    url("./../fonts/Mont-Bold.woff2") format("woff2"),
+    url("./../fonts/Mont-Bold.woff") format("woff");
+}

@@ -1,3 +1,16 @@
+// В font-size можно записать самый частый размер шрифта на сайте, в font-family - самый частое семейство шрифта.
+
+body {
+  font-family: "Mont-Regular", "Arial", sans-serif;
+  color: var(--main-color);
+  font-size: rem(14);
+  font-weight: 600;
+  line-height: 1.4;
+  // color: $mainColor;
+  // overflow-wrap: break-word;
+  // word-wrap: break-word;(
+}
+
 .wrapper {
   overflow: hidden;
   // overflow-x: hidden;
@@ -33,27 +46,30 @@ body._lock {
   align-items: center;
   width: fit-content;
   // color: var(--green);
-  // font-size: rem(12);
-  // min-height: rem(36);
-  // padding: rem(8) rem(24);
-  // border-radius: rem(4);
-  // border: 1px solid var(--green);
+  font-size: rem(12);
+  line-height: 1;
+  min-height: rem(55);
+  padding: rem(15) rem(26);
+  border-radius: rem(100);
+  border: 1px solid var(--blue-color);
   text-align: center;
   user-select: none;
-  transition: all 0.3s ease 0s;
-  // @media (any-hover: hover) and (pointer: fine) {
-  // 	&:hover {
-  // 		color: var(--white);
-  // 		background: var(--green);
-  // 	}
-  // }
+  transition:
+    color 0.3s ease,
+    background-color 0.3s ease;
+  @media (any-hover: hover) and (pointer: fine) {
+    &:hover {
+      color: var(--white-color);
+      background: var(--blue-color);
+    }
+  }
 }
 
 /*--------- visually-hidden ---------*/
 
 // Класс, который можно использовать для элементов, которые  нужно скрыть, но так, чтобы скринридеры их видели. Например, заголовок, который должен по логике быть, но по дизайн-макету его нет. По скрытым таким способам ссылкам и кнопкам будет при табе происходить фокусировка, что будет не видно.
 // При display: none; ни поисковики, ни скринридеды не видят скрытый элемент. Атрибут hidden может заменить display: none;
-// Если нужно сделать плавное появление и исчезновение выпадающего меню можно использовать visibility и opacity (hidden и 0). Но при этом нужно, чтобы элемент был спозиционирован абсолютно. Иначе он будет продолжать занимать место в разметке. Поисковики будут видеть элемент, скринридеры - нет.
+// Если нужно сделать плавное появление и исчезновение выпадающего меню, можно использовать visibility и opacity (hidden и 0). Но при этом нужно, чтобы элемент был спозиционирован абсолютно. Иначе он будет продолжать занимать место в разметке. Поисковики будут видеть элемент, скринридеры - нет.
 //Вариант: opacity: 0; pointer-events: none; (и поисковики, и скринридеры видят элемент, элемент занимает место в разметке, как и в варианте выше). Делает то же самое.
 // Исчезновение блока можно сделать с помощью спойлера (за счет height: 0;). В этом случае исчезновение/появление анимируется. И скрытый элемент будут видеть и поисковики, и скринридеры. Но в случае с height: auto; height не анимируется. Нужно, чтобы оба значения height были числами. Плюс нужно убирать паддинги и бордеры (при height: 0 они остаются видны).
 
@@ -76,4 +92,57 @@ body._lock {
 
 .none {
   display: none !important;
+}
+
+.logo {
+  display: flex;
+  gap: rem(10);
+  align-items: flex-end;
+  @media (any-hover: hover) and (pointer: fine) {
+    &:hover {
+      .logo__img {
+        transform: scale(1.05);
+        opacity: 0.8;
+      }
+    }
+  }
+
+  // .logo__img-wrapper
+  &__img-wrapper {
+    width: rem(48);
+    height: 100%;
+    position: relative;
+  }
+
+  // .logo__img
+
+  &__img {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition:
+      transform 0.3s ease,
+      opacity 0.3s ease;
+  }
+
+  // .logo__text
+
+  &__text {
+    margin-bottom: rem(3);
+    max-width: rem(100);
+  }
+
+  // .logo__title
+
+  &__title {
+    color: var(--blue-color);
+  }
+
+  // .logo__subtitle
+
+  &__subtitle {
+    color: var(--gray-color);
+    font-size: rem(10);
+  }
 }

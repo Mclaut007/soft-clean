@@ -3,11 +3,14 @@
 // Возможно, лучше использовать css-переменные, а не scss. Тогда, к примеру, в будущем можно очень легко на всем сайте поменять цвет, который применяется во множестве мест. Пример использования:
 
 :root {
-  --main-color: #000;
+  --main-color: #4b5258;
+  --gray-color: #959a9d;
   --white-color: #fff;
-  --main-font-family: "Roboto", "Arial", sans-serif;
-  --main-font-size: rem(16);
+  --blue-color: #43aaff;
+  --orange-color: #ffc24d;
+  // самые частые font-size и font-family вставляем в body без переменных
 }
+
 // .block {
 // color: var(--main-color);
 // }
@@ -21,7 +24,7 @@
 
 // $maxWidth: 1280px;
 
-$maxWidthPx: 1280; // Это ширина в пикселях, но пишем без пикселей, чтобы пересчитать в ремы
+$maxWidthPx: 1054; // Это ширина в пикселях, но пишем без пикселей, чтобы пересчитать в ремы
 $minWidthPx: 320;
 
 // Если хотим maxWidth и minWidth в ремах, то пишем следующее:
@@ -54,7 +57,7 @@ $mobile: calc(767.98 / 16 * 1rem);
 $mobileMiddle: calc(575.98 / 16 * 1rem);
 $mobileSmall: calc(478.98 / 16 * 1rem);
 
-// Брейкпонты в ремах без ремов (без единиц измерения) //
+// Брейкпойнты в ремах без ремов (без единиц измерения) //
 
 $deskMiddleRemWithout: calc(1399.98 / 16);
 $deskRemWithout: calc(1199.98 / 16);

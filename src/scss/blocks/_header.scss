@@ -1,2 +1,158 @@
-// .header {
-// }
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  // .header__container
+
+  &__container {
+    display: flex;
+    align-items: center;
+    padding: rem(27) rem(15);
+    flex-wrap: wrap;
+    min-height: rem(90);
+    @media (max-width: $tablet) {
+      justify-content: space-between;
+      gap: rem(30);
+    }
+  }
+
+  // .header__logo
+
+  &__logo {
+    @media (min-width: $tablet) {
+      margin-right: rem(25);
+    }
+  }
+
+  // .header__phone-block-wrapper
+
+  &__phone-block-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    @media (min-width: $tablet) {
+      flex-grow: 1;
+      margin-right: rem(45);
+    }
+    @media (max-width: $mobile) {
+      order: 1;
+    }
+    @media (max-width: $mobileSmall) {
+      flex-grow: 1;
+      justify-content: center;
+    }
+  }
+
+  // .header__phone-block
+
+  &__phone-block {
+    line-height: 1;
+    flex-shrink: 0;
+  }
+
+  // .header__phone
+
+  &__phone {
+    font-size: rem(18);
+    margin-bottom: rem(4);
+    display: block;
+    @media (any-hover: hover) and (pointer: fine) {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  // .header__working-hours
+
+  &__working-hours {
+    color: var(--gray-color);
+    font-size: rem(14);
+    padding-left: rem(23);
+    position: relative;
+    &::before {
+      content: "";
+      border-radius: 50%;
+      width: rem(8);
+      height: rem(8);
+      background: #20ff87;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: rem(7);
+    }
+  }
+
+  // .header__messengers
+
+  &__messengers {
+    display: flex;
+    gap: rem(15);
+    @media (min-width: $tablet) {
+      margin-right: rem(50);
+    }
+    @media (max-width: $mobile) and (min-width: $mobileSmall) {
+      order: 1;
+      margin-left: auto;
+    }
+  }
+
+  // .header__messengers-text
+
+  &__messengers-text {
+    max-width: rem(140);
+    font-size: rem(12);
+    @media (max-width: $tablet) and (min-width: $mobile) {
+      display: none;
+    }
+    @media (max-width: $mobileMiddle) {
+      display: none;
+    }
+  }
+
+  // .header__messengers-links
+
+  &__messengers-links {
+    display: flex;
+    align-items: center;
+    gap: rem(10);
+    flex-shrink: 0;
+    @media (max-width: $tablet) {
+      gap: rem(20);
+    }
+  }
+
+  // .header__messenger-link
+
+  &__messenger-link {
+    width: rem(32);
+    transition:
+      transform 0.3s ease,
+      opacity 0.3s ease;
+    @media (any-hover: hover) and (pointer: fine) {
+      &:hover {
+        transform: scale(1.1);
+        opacity: 0.7;
+      }
+    }
+    &:nth-child(2) {
+      width: rem(28);
+    }
+  }
+
+  // .header__messenger-icon
+
+  &__messenger-icon {
+  }
+
+  // .header__button
+
+  &__button {
+    @media (max-width: $mobile) {
+      flex-grow: 1;
+    }
+    @media (max-width: $mobileSmall) {
+      order: 2;
+    }
+  }
+}

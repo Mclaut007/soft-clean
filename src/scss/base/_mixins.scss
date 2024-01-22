@@ -29,10 +29,10 @@
 @function proadrem($min, $max, $minWidthRemWithout, $maxWidthRemWithout) {
 	@return clamp(
 		rem($min),
-		calc(rem($min) + (($max - $min) / 16) * ((100vw - $minWidthRemWithout * 1rem) / ($maxWidthRemWithout - $minWidthRemWithout))),
+		calc(
+			rem($min) + (($max - $min) / 16) *
+				((100vw - $minWidthRemWithout * 1rem) / ($maxWidthRemWithout - $minWidthRemWithout))
+		),
 		rem($max)
 	);
 }
-
-
-
