@@ -1,14 +1,13 @@
 // В font-size можно записать самый частый размер шрифта на сайте, в font-family - самый частое семейство шрифта.
 
 body {
-  font-family: "Mont-Regular", "Arial", sans-serif;
+  font-family: var(--mont-600);
   color: var(--main-color);
   font-size: rem(14);
-  font-weight: 600;
   line-height: 1.4;
   // color: $mainColor;
   // overflow-wrap: break-word;
-  // word-wrap: break-word;(
+  // word-wrap: break-word;
 }
 
 .wrapper {
@@ -61,6 +60,56 @@ body._lock {
     &:hover {
       color: var(--white-color);
       background: var(--blue-color);
+    }
+  }
+  // .button_large
+
+  &_large {
+    // min-height: rem(80);
+    min-height: proadrem(60, 80, $minWidthRemWithout, $maxWidthRemWithout);
+    font-size: 13px;
+    font-weight: 600;
+    padding: rem(20) rem(43);
+    line-height: 1.5;
+    letter-spacing: rem(1.95);
+    text-transform: uppercase;
+    @media (max-width: $mobileSmall) {
+      padding: rem(15) rem(30);
+    }
+  }
+
+  // .button_small
+
+  &_small {
+  }
+
+  // .button_blue
+
+  &_blue {
+    border: 1px solid var(--blue-color);
+    background: var(--blue-color);
+    color: #fff;
+    box-shadow: 0 rem(4) rem(10) rem(0) rgba(255, 255, 255, 0.3) inset;
+    @media (any-hover: hover) and (pointer: fine) {
+      &:hover {
+        background: transparent;
+        color: var(--main-color);
+      }
+    }
+  }
+
+  // .button_yellow
+
+  &_yellow {
+    border: 1px solid var(--orange-color);
+    background: var(--orange-color);
+    color: #fff;
+    box-shadow: 0 rem(4) rem(10) rem(0) rgba(255, 255, 255, 0.3) inset;
+    @media (any-hover: hover) and (pointer: fine) {
+      &:hover {
+        background: transparent;
+        color: var(--main-color);
+      }
     }
   }
 }
@@ -144,5 +193,21 @@ body._lock {
   &__subtitle {
     color: var(--gray-color);
     font-size: rem(10);
+  }
+}
+
+.heading {
+  font-size: rem(30);
+  line-height: 1.5;
+  font-size: proadrem(25, 30, $minWidthRemWithout, $maxWidthRemWithout);
+  ._bold {
+    font-family: var(--mont-800);
+  }
+  ._small {
+    // font-size: rem(18);
+    font-size: proadrem(16, 18, $minWidthRemWithout, $maxWidthRemWithout);
+  }
+  @media (max-width: $mobile) {
+    line-height: 1.3;
   }
 }
