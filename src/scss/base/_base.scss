@@ -67,7 +67,7 @@ body._lock {
   &_large {
     // min-height: rem(80);
     min-height: proadrem(60, 80, $minWidthRemWithout, $maxWidthRemWithout);
-    font-size: 13px;
+    font-size: rem(13);
     font-weight: 600;
     padding: rem(20) rem(43);
     line-height: 1.5;
