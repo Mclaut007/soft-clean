@@ -18,7 +18,8 @@
 
   &__item {
     background: var(--orange-color);
-    border-radius: rem(30);
+    // border-radius: rem(30);
+    border-radius: proadrem(22, 30, $minWidthRemWithout, $maxWidthRemWithout);
     padding: rem(25);
     // min-height: rem(150);
     min-height: proadrem(100, 150, $minWidthRemWithout, $maxWidthRemWithout);

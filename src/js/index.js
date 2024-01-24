@@ -47,9 +47,15 @@
 // if (isMobile.any()) {
 //   document.body.classList.add("_touch");
 
-
 // } else {
 //   document.body.classList.add("_pc");
 // }
 
 // ====================================== //
+
+// import changeMenuLinksStyle from "./modules/menu.js";
+
+// changeMenuLinksStyle();
+
+import changeMenuLinksStyle from "./modules/menu.js";
+changeMenuLinksStyle();
