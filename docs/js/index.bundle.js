@@ -1,0 +1,1 @@
+!function(){"use strict";!function(){const t=document.querySelectorAll(".menu__link");for(const e of t)e.addEventListener("click",c);function c(c){t.forEach((t=>{t.classList.remove("_active")})),c.target.classList.add("_active")}}()}();

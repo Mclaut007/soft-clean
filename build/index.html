@@ -58,7 +58,7 @@
     </div>
     <div class="intro__buttons">
       <a href="#" class="intro__button button button_large button_blue">Рассчитать стоимость</a>
-      <a href="#" class="intro__button button button_large button_yellow">Выбрать вид уборки</a>
+      <a href="#" class="intro__button button button_large button_orange">Выбрать вид уборки</a>
     </div>
     <img src="./img/intro/img-bg.png" alt="Девушка, моющая стол. Просто задний фон" class="intro__img-bg">
     <div class="intro__sticker">
@@ -136,6 +136,67 @@
     </ul>
   </div>
 </nav>
+      <section class="calculator">
+  <div class="calculator__container">
+    <h2 class="calculator__heading heading2">
+      <span class="_bold">Калькулятор стоимости уборки</span> с точностью до 98%
+    </h2>
+    <div class="calculator__paragraph paragraph">
+      Это бесплатно и ни к чему не обязывает!
+    </div>
+    <div class="calculator__form-section">
+      <div class="calculator__form-block">
+        <div class="calculator__form-top-texts">
+          <div class="calculator__form-text">
+            Отлично! Ваши ответы получены, менеджер уже приступает к расчёту
+          </div>
+          <div class="calculator__form-text_small">
+            Где вам удобнее получить расчёт?
+          </div>
+        </div>
+        <form action="#" method="get" class="calculator__form">
+          <div class="calculator__messengers">
+            <label class="calculator__messenger-input-label" tabindex="0">
+              <input type="radio" name="messenger" value="telegram" class="calculator__messenger-input" tabindex="-1">
+              <img src="./img/common/telegram-icon.svg" alt="telegram icon" class="calculator__messenger-img">
+            </label>
+            <label class="calculator__messenger-input-label" tabindex="0">
+              <input type="radio" name="messenger" value="whatsapp" class="calculator__messenger-input" tabindex="-1">
+              <img src="./img/common/whatsup-icon.svg" alt="whatsapp icon" class="calculator__messenger-img">
+            </label>
+          </div>
+          <input type="text" name="text" placeholder="Введите ваш телефон" class="calculator__input-text"
+            autocomplete="off">
+          <button type="submit" class="calculator__button-submit button button_orange button_middle">
+            Получить расчёт и бонусы
+          </button>
+          <label class="calculator__checkbox-agreement-label">
+            <input type="checkbox" class="calculator__checkbox-agreement" name="agreement" required>
+            <div class="calculator__checkbox-agreement-text">
+              Нажимая на кнопку вы соглашаетесь с условиями <a href="#" class="_bold-underline">Политики
+                конфиденциальности</a>
+            </div>
+          </label>
+        </form>
+      </div>
+      <div class="calculator__bonuses-card">
+        <div class="calculator__bonuses-text">
+          Ваши бонусы:
+        </div>
+        <ul class="calculator__bonuses-list">
+          <li class="calculator__bonuses-item">Скидка 10% на первый заказ</li>
+          <li class="calculator__bonuses-item">Книга «Магическая уборка» <div class="_small">(в бумажном
+              переплёте)<div></li>
+        </ul>
+        <img src="./img/calculator/book.png" alt="книга 'Магическая уборка'" class="calculator__bonuses-img">
+        <img src="./img/calculator/percent-cupon.png" alt="купон с изображением знака процента"
+          class="calculator__bonuses-img-bg">
+      </div>
+      <img src="./img/calculator/kitchen-bg.png" alt="задний фон, размытый" class="calculator__img-bg">
+      <img src="./img/calculator/phone.png" alt="рука со смартфоном с телеграмом" class="calculator__img">
+    </div>
+  </div>
+</section>
     </main>
     <footer class="footer">
   

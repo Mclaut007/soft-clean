@@ -78,6 +78,13 @@ body._lock {
     }
   }
 
+  // .button_middle
+
+  &_middle {
+    // min-height: rem(70);
+    min-height: proadrem(60, 70, $minWidthRemWithout, $maxWidthRemWithout);
+  }
+
   // .button_small
 
   &_small {
@@ -100,7 +107,7 @@ body._lock {
 
   // .button_yellow
 
-  &_yellow {
+  &_orange {
     border: 1px solid var(--orange-color);
     background: var(--orange-color);
     color: #fff;
@@ -207,6 +214,32 @@ body._lock {
     // font-size: rem(18);
     font-size: proadrem(16, 18, $minWidthRemWithout, $maxWidthRemWithout);
   }
+  @media (max-width: $mobile) {
+    line-height: 1.3;
+  }
+}
+
+.heading2 {
+  // font-size: rem(30);
+  font-size: proadrem(20, 30, $minWidthRemWithout, $maxWidthRemWithout);
+  line-height: 1.5;
+  text-align: center;
+  ._bold {
+    font-family: var(--mont-800);
+  }
+  @media (max-width: $mobile) {
+    line-height: 1.3;
+  }
+}
+
+// paragraph
+
+.paragraph {
+  color: var(--gray-color);
+  // font-size: rem(22);
+  font-size: proadrem(18, 22, $minWidthRemWithout, $maxWidthRemWithout);
+  line-height: 1.5;
+  text-align: center;
   @media (max-width: $mobile) {
     line-height: 1.3;
   }

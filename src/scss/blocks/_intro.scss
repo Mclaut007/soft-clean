@@ -93,6 +93,9 @@
       bottom: rem(20);
       right: rem(50);
     }
+    @media (max-width: $mobile) {
+      right: rem(135);
+    }
   }
 
   // .intro__sticker-text
