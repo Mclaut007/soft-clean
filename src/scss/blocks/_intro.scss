@@ -1,9 +1,11 @@
 .intro {
+  background: url("./../img/intro/shape-bg.svg") no-repeat bottom center;
   // .intro__container
 
   &__container {
     padding-top: rem(165);
-    padding-bottom: rem(131);
+    // padding-bottom: rem(131);
+    padding-bottom: rem(156);
     position: relative;
     @media (max-width: $mobile) {
       padding-top: rem(200);
@@ -61,7 +63,8 @@
     position: absolute;
     width: 99%;
     left: 23%;
-    bottom: 0;
+    // bottom: 0;
+    bottom: rem(25);
     max-width: none;
     z-index: -1;
     // width: rem(1045);
@@ -90,7 +93,7 @@
       color: var(--blue-color);
     }
     @media (max-width: $tablet) {
-      bottom: rem(20);
+      bottom: rem(40);
       right: rem(50);
     }
     @media (max-width: $mobile) {

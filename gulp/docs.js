@@ -4,7 +4,8 @@ const gulp = require("gulp");
 
 const fileInclude = require("gulp-file-include");
 const htmlclean = require("gulp-htmlclean");
-const webpHTML = require("gulp-webp-html");
+// С webpHTML html-файла не оказывается в финальной папке почему-то. Поэтому отключу
+// const webpHTML = require("gulp-webp-html");
 
 // SASS
 const sass = require("gulp-sass")(require("sass"));
@@ -28,7 +29,7 @@ const babel = require("gulp-babel");
 // gulp-imagemin - сжимает картинки
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
-// Не работает у меня gulp-changed последней версии. В документации не так, как в видео. Установил версию 4.0.3
+// Не работает у меня gulp-changed последней версии. В документации не так, как в видео. Установил версию 4.0.3. Заработало
 const changed = require("gulp-changed");
 
 gulp.task("clean:docs", function (done) {
@@ -54,14 +55,17 @@ const plumberNotify = (title) => {
 };
 
 gulp.task("html:docs", function () {
-  return gulp
-    .src(["./src/html/**/*.html", "!./src/html/blocks/*.html"])
-    .pipe(changed("./docs/"))
-    .pipe(plumber(plumberNotify("HTML")))
-    .pipe(fileInclude(fileIncludeSetting))
-    .pipe(webpHTML())
-    .pipe(htmlclean())
-    .pipe(gulp.dest("./docs/"));
+  return (
+    gulp
+      .src(["./src/html/**/*.html", "!./src/html/blocks/*.html"])
+      .pipe(changed("./docs/"))
+      .pipe(plumber(plumberNotify("HTML")))
+      .pipe(fileInclude(fileIncludeSetting))
+      // С webpHTML html-файла не оказывается в финальной папке почему-то. Поэтому отключу
+      // .pipe(webpHTML())
+      .pipe(htmlclean())
+      .pipe(gulp.dest("./docs/"))
+  );
 });
 
 gulp.task("sass:docs", function () {

@@ -1,8 +1,11 @@
 .calculator {
   line-height: 1.5;
+  background: url("./../img/calculator/bottom-shape-bg.svg") no-repeat bottom center;
   // .calculator__container
 
   &__container {
+    // padding-bottom: rem(161);
+    padding-bottom: proadrem(40, 161, $minWidthRemWithout, $maxWidthRemWithout);
     @media (max-width: $mobile) {
       padding-top: rem(30);
     }
@@ -120,6 +123,7 @@
     align-items: center;
     flex-grow: 1;
     cursor: pointer;
+    user-select: none;
     &:has(input:checked) {
       background: var(--orange-color);
     }
@@ -355,6 +359,9 @@
     }
     @media (max-width: $tablet) {
       max-width: 60%;
+    }
+    @media (max-width: $mobileMiddle) {
+      opacity: 0.2;
     }
   }
 }
