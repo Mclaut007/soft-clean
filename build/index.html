@@ -112,6 +112,7 @@
   </div>
 </div>
 
+
       <nav class="menu">
   <div class="menu__container">
     <ul class="menu__list">
@@ -155,24 +156,24 @@
           </div>
         </div>
         <form action="#" method="get" class="calculator__form">
-          <div class="calculator__messengers">
-            <label class="calculator__messenger-input-label" tabindex="0">
-              <input type="radio" name="messenger" value="telegram" class="calculator__messenger-input" tabindex="-1">
-              <img src="./img/common/telegram-icon.svg" alt="telegram icon" class="calculator__messenger-img">
+          <div class="calculator__messengers messengers-inputs">
+            <label class="messengers-inputs__input-label" tabindex="0">
+              <input type="radio" name="messenger" value="telegram" class="messengers-inputs__input" tabindex="-1">
+              <img src="./img/common/telegram-icon.svg" alt="telegram icon" class="messenger-inputs__img">
             </label>
-            <label class="calculator__messenger-input-label" tabindex="0">
-              <input type="radio" name="messenger" value="whatsapp" class="calculator__messenger-input" tabindex="-1">
-              <img src="./img/common/whatsup-icon.svg" alt="whatsapp icon" class="calculator__messenger-img">
+            <label class="messengers-inputs__input-label" tabindex="0">
+              <input type="radio" name="messenger" value="whatsapp" class="messengers-inputs__input" tabindex="-1">
+              <img src="./img/common/whatsup-icon.svg" alt="whatsapp icon" class="messengets-inputs__img">
             </label>
           </div>
-          <input type="text" name="text" placeholder="Введите ваш телефон" class="calculator__input-text"
+          <input type="text" name="text" placeholder="Введите ваш телефон" class="calculator__input-text input-text"
             autocomplete="off">
           <button type="submit" class="calculator__button-submit button button_orange button_middle">
             Получить расчёт и бонусы
           </button>
-          <label class="calculator__checkbox-agreement-label">
-            <input type="checkbox" class="calculator__checkbox-agreement" name="agreement" required>
-            <div class="calculator__checkbox-agreement-text">
+          <label class="calculator__checkbox-agreement checkbox-agreement">
+            <input type="checkbox" class="checkbox-agreement__input" name="agreement" required>
+            <div class="checkbox-agreement__text">
               Нажимая на кнопку вы соглашаетесь с условиями <a href="#" class="_bold-underline">Политики
                 конфиденциальности</a>
             </div>
@@ -186,7 +187,8 @@
         <ul class="calculator__bonuses-list">
           <li class="calculator__bonuses-item">Скидка 10% на первый заказ</li>
           <li class="calculator__bonuses-item">Книга «Магическая уборка» <div class="_small">(в бумажном
-              переплёте)<div></li>
+              переплёте)<div>
+          </li>
         </ul>
         <img src="./img/calculator/book.png" alt="книга 'Магическая уборка'" class="calculator__bonuses-img">
         <img src="./img/calculator/percent-cupon.png" alt="купон с изображением знака процента"
@@ -197,7 +199,7 @@
     </div>
   </div>
 </section>
-      <div class="other-companies-problems">
+      <section class="other-companies-problems">
   <div class="other-companies-problems__container">
     <div class="other-companies-problems__subtitle subtitle">
       А вы знали?
@@ -297,7 +299,70 @@
       </div>
     </div>
   </div>
-</div>
+</section>
+      <section class="our-benefits">
+  <div class="our-benefits__container">
+    <h2 class="our-benefits__heading heading2">
+      Наша работа построена
+      <span class="_bold">на профессионализме и честности</span>
+    </h2>
+    <div class="our-benefits__subtitle subtitle">
+      Обращаясь за помощью к нам, вы можете быть спокойны за качество и ваш комфорт
+    </div>
+    <div class="our-benefits__cards benefits-cards">
+      <div class="benefits-cards__card card">
+        <div class="card__img-wrapper">
+          <img src="./img/our-benefits/check-prices.png" alt="галочка и смета" class="benefits-cards__img benefits-cards__img_1">
+        </div>
+        <div class="card__text-content">
+          <div class="card__heading">
+            Честное сотрудничество
+          </div>
+          <div class="card__text">
+            Заранее рассчитаем стоимость услуг,
+            и закрепляем наше сотрудничество
+            договором. Оплата исключительно
+            по факту выполнения. Вы проверяете
+            результат и платите тогда, когда он
+            вас удовлетворяет.
+          </div>
+        </div>
+      </div>
+      <div class="benefits-cards__card card">
+        <div class="card__img-wrapper">
+          <img src="./img/our-benefits/bottles.png" alt="две бутылки с моющими средствами" class="benefits-cards__img benefits-cards__img_2">
+          <img src="./img/our-benefits/watermark.png" alt="водяной знак с надписью hypoallergenic"
+            class="benefits-cards__img benefits-cards__img_2-2">
+        </div>
+        <div class="card__text-content">
+          <div class="card__heading">
+            Бережные моющие
+          </div>
+          <div class="card__text">
+            Внимательно подходим к выбору
+            моющих средств. Знаем какие средства использовать в конкретных случаях, чтобы
+            не повредить мебель и сохранить
+            прежний блеск поверхностей.
+          </div>
+        </div>
+      </div>
+      <div class="benefits-cards__card benefits-cards__card_3 card">
+        <div class="card__img-wrapper">
+          <img src="./img/our-benefits/shield.png" alt="щит с галочкой на нем" class="benefits-cards__img benefits-cards__img_3">
+        </div>
+        <div class="card__text-content">
+          <div class="card__heading">
+            Гарантия качества
+          </div>
+          <div class="card__text">
+            На объектах работают от 2 и более опытных клинеров. Комплексная уборка делается в соответствии с нормами
+            качества. Блеск от потолка до пола!
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
     </main>
     <footer class="footer">
   

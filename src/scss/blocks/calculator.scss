@@ -105,61 +105,13 @@
   // .calculator__messengers
 
   &__messengers {
-    display: flex;
-    gap: rem(8);
     margin-bottom: rem(15);
-  }
-
-  // .calculator__messenger-input-label
-
-  &__messenger-input-label {
-    width: rem(184);
-    // height: rem(70);
-    height: proadrem(60, 70, $minWidthRemWithout, $maxWidthRemWithout);
-    border-radius: rem(20);
-    background: var(--white-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-    cursor: pointer;
-    user-select: none;
-    &:has(input:checked) {
-      background: var(--orange-color);
-    }
-  }
-
-  // .calculator__messenger-input
-
-  &__messenger-input {
-    position: absolute;
-    z-index: -2;
-    opacity: 0;
-  }
-
-  // .calculator__messenger-img
-
-  &__messenger-img {
   }
 
   // .calculator__input-text
 
   &__input-text {
-    font-size: rem(14);
-    display: block;
-    width: 100%;
-    background: var(--white-color);
-    border-radius: rem(35);
-    // min-height: rem(70);
-    min-height: proadrem(60, 70, $minWidthRemWithout, $maxWidthRemWithout);
     margin-bottom: rem(10);
-    padding: rem(10) rem(20) rem(10) rem(47);
-    &::placeholder {
-      color: var(--gray-color);
-      font-style: normal;
-      font-weight: 600;
-      line-height: 100%; /* 14px */
-    }
   }
 
   // .calculator__button-submit
@@ -174,62 +126,11 @@
     margin-bottom: rem(15);
   }
 
-  // .calculator__checkbox-agreement-label
-
-  &__checkbox-agreement-label {
-    position: relative;
-    width: rem(256);
-    max-width: 100%;
-    margin: 0 auto;
-    display: block;
-    &::before {
-      content: "";
-      width: rem(13);
-      height: rem(13);
-      border-radius: rem(4);
-      border: 1px solid var(--orange-color);
-      position: absolute;
-      top: rem(7);
-      left: rem(-19);
-    }
-    &:has(input:checked)::before {
-      background:
-        url("./../img/calculator/check.svg") no-repeat center,
-        var(--orange-color);
-      background-size: rem(7) rem(7);
-    }
-  }
-
   // .calculator__checkbox-agreement
 
   &__checkbox-agreement {
-    position: absolute;
-    z-index: -2;
-    opacity: 0;
-  }
-
-  // .calculator__checkbox-agreement-text
-
-  &__checkbox-agreement-text {
-    font-family: var(--mont-400);
-    color: var(--white-color);
-    font-size: rem(11);
-
-    ._bold-underline {
-      font-family: var(--mont-600);
-      text-decoration: underline;
-      text-underline-offset: rem(2.3);
-      text-decoration-thickness: rem(0.5);
-      transition:
-        opacity 0.3s ease,
-        text-decoration 0.3s ease;
-      @media (any-hover: hover) and (pointer: fine) {
-        &:hover {
-          opacity: 0.9;
-          text-decoration: none;
-        }
-      }
-    }
+    width: rem(256);
+    margin: 0 auto;
   }
 
   // .calculator__bonuses-card
