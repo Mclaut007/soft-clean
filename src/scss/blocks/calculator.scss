@@ -1,6 +1,9 @@
 .calculator {
   line-height: 1.5;
   background: url("./../img/calculator/bottom-shape-bg.svg") no-repeat bottom center;
+  @media (min-width: 120rem) {
+    background-size: 100%;
+  }
   // .calculator__container
 
   &__container {

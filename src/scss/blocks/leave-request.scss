@@ -1,4 +1,5 @@
 .leave-request {
+  background: #f2f9ff;
   // .leave-request__container
 
   &__container {
@@ -10,24 +11,15 @@
     border-radius: rem(30);
     position: relative;
     overflow: hidden;
-    padding: rem(42) rem(58) rem(49);
+    background: var(--blue-color);
+    // padding: rem(42) rem(58) rem(49);
     padding: proadrem(25, 42, $minWidthRemWithout, $maxWidthRemWithout)
       proadrem(15, 58, $minWidthRemWithout, $maxWidthRemWithout)
       proadrem(25, 49, $minWidthRemWithout, $maxWidthRemWithout);
-    &::before {
-      content: "";
-      width: 100%;
-      height: 100%;
-      background: var(--blue-color);
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: -1;
+    @media (max-width: $mobileMiddle) {
+      margin-left: rem(-15);
+      margin-right: rem(-15);
     }
-    // @media (max-width: $mobileMiddle) {
-    //   margin-left: rem(-15);
-    //   margin-right: rem(-15);
-    // }
   }
 
   // .leave-request__text
@@ -38,6 +30,8 @@
     font-size: proadrem(18, 20, $minWidthRemWithout, $maxWidthRemWithout);
     max-width: rem(357);
     margin-bottom: proadrem(15, 32, $minWidthRemWithout, $maxWidthRemWithout);
+    position: relative;
+    z-index: 1;
     @media (max-width: $mobileSmall) {
       max-width: 100%;
       text-align: center;
@@ -62,6 +56,8 @@
     display: flex;
     gap: rem(10);
     margin-bottom: rem(25);
+    position: relative;
+    z-index: 1;
     @media (max-width: $mobile) {
       max-width: 100%;
     }
@@ -90,6 +86,8 @@
   // .leave-request__checkbox-agreement
 
   &__checkbox-agreement {
+    position: relative;
+    z-index: 1;
     &::before {
       // top: rem(0.5);
       left: rem(-1.5);
@@ -111,7 +109,7 @@
     top: 0;
     left: 0;
     object-fit: cover;
-    z-index: -1;
+    // z-index: -1;
   }
 
   // .leave-request__img
@@ -122,7 +120,7 @@
     bottom: 0;
     // right: rem(80);
     right: proadrem(-50, 80, $mobileRemWithout, $maxWidthRemWithout);
-    z-index: -1;
+    // z-index: -1;
     @media (max-width: $mobile) {
       display: none;
     }

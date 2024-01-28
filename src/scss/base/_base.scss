@@ -229,6 +229,9 @@ body._lock {
   ._bold {
     font-family: var(--mont-800);
   }
+  ._blue {
+    color: var(--blue-color);
+  }
   @media (max-width: $mobile) {
     line-height: 1.3;
   }
@@ -335,7 +338,7 @@ body._lock {
     position: absolute;
     // top: rem(7);
     top: 50%;
-    transform: translateY(-52%);
+    transform: translateY(-60%);
     left: rem(-19);
   }
   &:has(input:checked)::before {
