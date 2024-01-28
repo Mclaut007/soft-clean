@@ -83,6 +83,8 @@ body._lock {
   &_middle {
     // min-height: rem(70);
     min-height: proadrem(60, 70, $minWidthRemWithout, $maxWidthRemWithout);
+    text-transform: uppercase;
+    font-size: rem(13);
   }
 
   // .button_small
@@ -331,7 +333,9 @@ body._lock {
     border-radius: rem(4);
     border: 1px solid var(--orange-color);
     position: absolute;
-    top: rem(7);
+    // top: rem(7);
+    top: 50%;
+    transform: translateY(-52%);
     left: rem(-19);
   }
   &:has(input:checked)::before {
