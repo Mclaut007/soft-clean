@@ -53,9 +53,14 @@
 
 // ====================================== //
 
-// import changeMenuLinksStyle from "./modules/menu.js";
-
-// changeMenuLinksStyle();
-
 import changeMenuLinksStyle from "./modules/menu.js";
 changeMenuLinksStyle();
+
+import switchBetweenRooms from "./modules/look-how.js";
+switchBetweenRooms();
+
+
+
+
+
+
