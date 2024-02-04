@@ -1,6 +1,7 @@
 .get-price-list {
   line-height: 1.4;
   background: url("./../img/calculator/bottom-shape-bg.svg") no-repeat bottom center;
+  background-size: 120rem;
   @media (min-width: 120rem) {
     background-size: 100%;
   }

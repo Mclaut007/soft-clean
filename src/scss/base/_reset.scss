@@ -61,10 +61,13 @@ ul li {
   list-style: none;
 }
 
-img,
+img {
+  display: block;
+  max-width: 100%;
+}
+
 svg {
   vertical-align: top;
-  max-width: 100%;
 }
 
 input,

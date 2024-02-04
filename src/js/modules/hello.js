@@ -1,2 +1,2 @@
-const hello = "Hello, world!";
+const hello = "Hello, world!!!!!!!";
 export default hello;

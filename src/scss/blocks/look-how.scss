@@ -3,7 +3,8 @@
   // .look-how__container
 
   &__container {
-    padding: proadrem(20, 47, $minWidthRemWithout, $maxWidthRemWithout) rem(15) rem(60);
+    padding: proadrem(20, 47, $minWidthRemWithout, $maxWidthRemWithout) rem(15)
+      proadrem(30, 60, $minWidthRemWithout, $maxWidthRemWithout);
   }
 
   // .look-how__heading
