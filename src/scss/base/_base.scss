@@ -313,6 +313,9 @@ body._lock {
     font-family: var(--mont-400);
     color: var(--white-color);
     font-size: rem(11);
+    &_gray {
+      color: var(--gray-color);
+    }
 
     ._bold-underline {
       font-family: var(--mont-600);

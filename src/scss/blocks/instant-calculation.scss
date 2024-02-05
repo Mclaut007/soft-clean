@@ -126,7 +126,8 @@
 
   &__img-phone {
     position: absolute;
-    bottom: proadrem(0, 30, $minWidthRemWithout, $maxWidthRemWithout);
+    bottom: proadrem(0, 10, $minWidthRemWithout, $maxWidthRemWithout);
+    // bottom: proadrem(0, 30, $minWidthRemWithout, $maxWidthRemWithout);
     right: rem(-63);
     z-index: 1;
     width: 79%;
@@ -160,7 +161,7 @@
     left: 50%;
     transform: translateX(-50%);
     width: 120rem;
-    z-index: 2;
+    z-index: 20;
     @media (min-width: 120rem) {
       width: 100%;
     }
