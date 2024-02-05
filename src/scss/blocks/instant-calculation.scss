@@ -1,0 +1,168 @@
+.instant-calculation {
+  position: relative;
+  // .instant-calculation__container
+
+  &__container {
+    padding: proadrem(30, 138, $minWidthRemWithout, $maxWidthRemWithout) rem(15)
+      proadrem(30, 210, $minWidthRemWithout, $maxWidthRemWithout);
+    position: relative;
+  }
+
+  // .instant-calculation__content
+
+  &__content {
+    max-width: rem(510);
+    position: relative;
+    z-index: 3;
+    @media (max-width: $mobileMiddle) {
+      max-width: 100%;
+    }
+  }
+
+  // .instant-calculation__heading
+
+  &__heading {
+    text-align: left;
+    margin-bottom: rem(10);
+  }
+
+  // .instant-calculation__paragraph
+
+  &__paragraph {
+    text-align: left;
+    // margin-bottom: rem(41);
+    margin-bottom: proadrem(20, 41, $minWidthRemWithout, $maxWidthRemWithout);
+  }
+
+  // .instant-calculation__messengers-block
+
+  &__messengers-block {
+    max-width: rem(352);
+    border-radius: rem(30);
+    box-shadow: 0 rem(5) rem(20) 0 rgba(0, 0, 0, 0.1);
+    background: #fff;
+    padding: rem(35) rem(35) rem(25);
+    @media (max-width: $mobileMiddle) {
+      max-width: 100%;
+      padding: rem(25);
+    }
+    @media (max-width: $mobileSmall) {
+      padding: rem(20) rem(15);
+    }
+  }
+
+  // .instant-calculation__messengers-text
+
+  &__messengers-text {
+    color: var(--main-color);
+    font-size: rem(16);
+    line-height: 1.5;
+    margin-bottom: rem(15);
+    // max-width: rem(280);
+    text-wrap: balance;
+  }
+
+  // .instant-calculation__messengers-icon
+
+  &__messenger-icons {
+    display: flex;
+    gap: rem(10);
+    margin-bottom: rem(18);
+  }
+
+  // .instant-calculation__messenger-icon
+
+  &__messenger-icon {
+    flex-grow: 1;
+    // height: rem(70);
+    height: proadrem(60, 70, $minWidthRemWithout, $maxWidthRemWithout);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: rem(20);
+    transition: opacity 0.3s ease;
+    &_blue {
+      background: var(--blue-color);
+    }
+    &_green {
+      background: #7ad06d;
+    }
+    @media (any-hover: hover) and (pointer: fine) {
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+
+  // .instant-calculation__speed-response
+
+  &__speed-response {
+    line-height: 1.5;
+    color: var(--gray-color);
+    display: flex;
+    align-items: flex-start;
+    gap: rem(10);
+    &::before {
+      content: "";
+      width: rem(17);
+      height: rem(17);
+      background: url("./../img/instant-calculate/alarm-icon.svg") no-repeat center / contain;
+    }
+  }
+
+  // .instant-calculation__bg
+
+  &__bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    // z-index: -1;
+  }
+
+  // .instant-calculation__img-phone
+
+  &__img-phone {
+    position: absolute;
+    bottom: proadrem(0, 30, $minWidthRemWithout, $maxWidthRemWithout);
+    right: rem(-63);
+    z-index: 1;
+    width: 79%;
+    @media (max-width: $tablet) {
+      width: 70%;
+    }
+    @media (max-width: $mobileMiddle) {
+      display: none;
+    }
+  }
+
+  // .instant-calculation__bg-top-shape
+
+  &__bg-top-shape {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120rem;
+    z-index: 2;
+    @media (min-width: 120rem) {
+      width: 100%;
+    }
+  }
+
+  // .instant-calculation__bg-bottom-shape
+
+  &__bg-bottom-shape {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120rem;
+    z-index: 2;
+    @media (min-width: 120rem) {
+      width: 100%;
+    }
+  }
+}
