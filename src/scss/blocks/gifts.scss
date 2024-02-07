@@ -1,0 +1,129 @@
+.gifts {
+  background:
+    url("./../img/common/top-shape.svg") no-repeat top center,
+    url("./../img/common/bottom-shape.svg") no-repeat bottom center,
+    url("./../img/gifts/bg.jpg") no-repeat center center / cover;
+  @media (min-width: 120rem) {
+    background-size: 100%, 100%, cover;
+  }
+  // .gifts__container
+
+  &__container {
+    // padding: rem(135) rem(15) rem(151);
+    padding: proadrem(50, 135, $minWidthRemWithout, $maxWidthRemWithout) rem(15)
+      proadrem(40, 151, $minWidthRemWithout, $maxWidthRemWithout);
+    position: relative;
+  }
+
+  // .gifts__heading
+
+  &__heading {
+    max-width: rem(501);
+    margin-bottom: proadrem(20, 36, $minWidthRemWithout, $maxWidthRemWithout);
+    color: var(--white-color);
+    text-align: left;
+    @media (max-width: $mobileMiddle) {
+      max-width: rem(450);
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+  }
+
+  // .gifts__cards
+
+  &__cards {
+    position: relative;
+    z-index: 1;
+    max-width: rem(409);
+    @media (max-width: $mobileMiddle) {
+      margin: 0 auto;
+    }
+    @media (max-width: $mobileSmall) {
+      max-width: 100%;
+    }
+  }
+
+  // .gifts__card
+
+  &__card {
+    &:not(:last-child) {
+      margin-bottom: rem(10);
+    }
+  }
+
+  // .gifts__img
+
+  &__img {
+    // width: rem(433);
+    width: 41%;
+    position: absolute;
+    bottom: rem(133);
+    // right: rem(72);
+    right: 6.7%;
+    @media (max-width: $tablet) {
+      right: 5%;
+    }
+    @media (max-width: $mobile) {
+      right: -5%;
+    }
+    @media (max-width: $mobileMiddle) {
+      display: none;
+    }
+  }
+}
+
+.gift-card {
+  // .gift-card__img
+  border-radius: rem(30);
+  padding: rem(17) rem(20) rem(23) rem(24);
+  display: flex;
+  align-items: center;
+  gap: rem(23);
+  background: var(--white-color);
+  position: relative;
+  overflow: hidden;
+  @media (max-width: $mobileSmall) {
+    padding: rem(20);
+    gap: rem(20);
+  }
+  &__img {
+    width: rem(70);
+    // height: rem(70);
+    @media (max-width: $mobileSmall) {
+      position: absolute;
+      bottom: rem(-5);
+      right: rem(-5);
+    }
+  }
+
+  // .gift-card__content
+
+  &__content {
+  }
+
+  // .gift-card__title
+
+  &__title {
+    font-size: rem(16);
+    margin-bottom: rem(2);
+  }
+
+  // .gift-card__text
+
+  &__text {
+    color: var(--gray-color);
+    margin-bottom: rem(10);
+  }
+
+  // .gift-card__button
+
+  &__button {
+    // font-size: rem(12);
+    color: var(--blue-color);
+    border-radius: rem(20);
+    min-width: rem(150);
+    min-height: rem(35);
+    padding: rem(5) rem(15);
+  }
+}

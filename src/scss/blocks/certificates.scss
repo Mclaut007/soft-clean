@@ -1,0 +1,127 @@
+.certificates {
+  // .certificates__container
+
+  &__container {
+    padding: proadrem(10, 49, $minWidthRemWithout, $maxWidthRemWithout) rem(15)
+      proadrem(30, 120, $minWidthRemWithout, $maxWidthRemWithout);
+  }
+
+  // .certificates__heading
+
+  &__heading {
+    margin-bottom: rem(10);
+  }
+
+  // .certificates__paragraph
+
+  &__paragraph {
+    margin-bottom: proadrem(20, 36, $minWidthRemWithout, $maxWidthRemWithout);
+  }
+
+  // .certificates__wrapper
+
+  &__wrapper {
+    // padding: 0 rem(88);
+    position: relative;
+  }
+
+  // .certificates__swiper
+
+  &__swiper {
+    max-width: rem(880);
+    margin: 0 auto;
+    @media (min-width: $tablet) {
+      margin: rem(-15) auto;
+      padding: rem(15);
+    }
+    @media (max-width: $tablet) {
+      overflow: visible;
+    }
+  }
+
+  // .certificates__swiper-wrapper
+
+  &__swiper-wrapper {
+  }
+
+  // .certificates__swiper-slide
+
+  &__swiper-slide {
+    box-shadow: 0 rem(5) rem(20) 0 rgba(0, 0, 0, 0.1);
+    border-radius: proadrem(20, 30, $minWidthRemWithout, $maxWidthRemWithout);
+    overflow: hidden;
+  }
+
+  // .certificates__slide-img
+
+  &__slide-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    object-position: top center;
+  }
+
+  // .certificates__slide-img
+
+  &__slide-img-wrapper {
+    padding-bottom: 134%;
+    position: relative;
+  }
+
+  // .certificates__swiper-button-prev
+
+  &__swiper-button-prev,
+  &__swiper-button-next {
+    width: rem(63);
+    height: rem(63);
+    border-radius: 50%;
+    background: var(--blue-color);
+    box-shadow: inset 0 rem(4) rem(10) 0 rgba(255, 255, 255, 0.3);
+    transform: translateY(-50%);
+    margin-top: 0;
+    &::after {
+      display: none;
+    }
+    @media (max-width: $mobile) {
+      width: rem(55);
+      height: rem(55);
+    }
+    @media (max-width: $mobileSmall) {
+      // display: none;
+      width: rem(35);
+      height: rem(35);
+    }
+  }
+
+  // .certificates__swiper-button-prev
+
+  &__swiper-button-prev {
+    left: 0;
+    @media (max-width: $tablet) {
+      left: rem(-10);
+    }
+  }
+
+  // .certificates__swiper-button-prev-chevron
+
+  &__swiper-button-prev-chevron {
+  }
+
+  // .certificates__swiper-button-next
+
+  &__swiper-button-next {
+    right: 0;
+    @media (max-width: $tablet) {
+      right: rem(-10);
+    }
+  }
+
+  // .certificates__swiper-button-next-chevron
+
+  &__swiper-button-next-chevron {
+    transform: rotate(180deg);
+  }
+}

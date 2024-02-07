@@ -2,7 +2,8 @@
   // .our-inventory__container
 
   &__container {
-    padding: proadrem(10, 49, $minWidthRemWithout, $maxWidthRemWithout) rem(15) rem(48);
+    padding: proadrem(10, 49, $minWidthRemWithout, $maxWidthRemWithout) rem(15)
+      proadrem(0, 48, $minWidthRemWithout, $maxWidthRemWithout);
   }
 
   // .our-inventory__heading

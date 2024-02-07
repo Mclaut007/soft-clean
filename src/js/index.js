@@ -59,9 +59,10 @@ changeMenuLinksStyle();
 import switchBetweenRooms from "./modules/look-how.js";
 switchBetweenRooms();
 
-import ourWorksSwiper from "./modules/our-works__swiper.js";
+// import ourWorksSwiper from "./modules/our-works__swiper.js";
 
-import beforeAfterSlider from "./modules/our-works__before-after-slider.js";
-beforeAfterSlider();
+// import beforeAfterSlider from "./modules/our-works__before-after-slider.js";
+// beforeAfterSlider();
 
+import certificatesSwiper from "./modules/certificates-swiper.js";
 
