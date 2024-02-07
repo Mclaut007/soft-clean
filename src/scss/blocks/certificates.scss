@@ -30,6 +30,7 @@
   &__swiper {
     max-width: rem(880);
     margin: 0 auto;
+    user-select: none;
     @media (min-width: $tablet) {
       margin: rem(-15) auto;
       padding: rem(15);

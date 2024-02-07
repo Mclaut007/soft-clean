@@ -66,3 +66,5 @@ switchBetweenRooms();
 
 import certificatesSwiper from "./modules/certificates-swiper.js";
 
+import faq from "./modules/faq-spoilers.js";
+faq();
