@@ -1,3 +1,96 @@
-// .footer {
-// }
+.footer {
+  // .footer__container
 
+  &__container {
+    padding: rem(34) rem(15) rem(39);
+    display: flex;
+    align-items: center;
+    // gap: rem(30);
+    gap: rem(50);
+    @media (max-width: $maxWidth) {
+      padding-top: rem(55);
+    }
+  }
+
+  // .footer__logo
+
+  &__logo {
+    margin-right: auto;
+    flex-shrink: 0;
+    @media (max-width: $maxWidth) {
+      display: none;
+    }
+  }
+
+  // .footer__menu
+
+  &__menu {
+    display: flex;
+    column-gap: rem(50);
+    row-gap: rem(21);
+    align-items: center;
+    font-size: rem(12);
+    font-family: var(--mont-400);
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-grow: 1;
+    // @media (max-width: $maxWidth) {
+    //   column-gap: rem(40);
+    // }
+  }
+
+  // .footer__item
+
+  &__item {
+  }
+
+  // .footer__link
+
+  &__link {
+    @media (any-hover: hover) and (pointer: fine) {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  // .footer__messengers-block
+
+  &__messengers-block {
+    display: flex;
+    align-items: center;
+    gap: rem(16);
+  }
+
+  // .footer__messengers-text
+
+  &__messengers-text {
+  }
+
+  // .footer__messenger-links
+
+  &__messenger-links {
+    display: flex;
+    gap: rem(10);
+    @media (max-width: $tablet) {
+      gap: rem(20);
+    }
+  }
+
+  // .footer__messenger-link
+
+  &__messenger-link {
+  }
+
+  // .footer__messenger-icon
+
+  &__messenger-icon {
+    max-width: none;
+    &:first-child {
+      width: rem(31);
+    }
+    &:nth-child(2) {
+      width: rem(28);
+    }
+  }
+}

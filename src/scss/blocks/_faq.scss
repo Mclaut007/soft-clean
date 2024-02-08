@@ -2,13 +2,14 @@
   // .faq__container
 
   &__container {
-    padding-top: rem(95);
+    padding-top: proadrem(60, 95, $minWidthRemWithout, $maxWidthRemWithout);
+
   }
 
   // .faq__heading
 
   &__heading {
-    margin-bottom: rem(30);
+    margin-bottom: proadrem(20, 30, $minWidthRemWithout, $maxWidthRemWithout);
   }
 
   // .faq__items
@@ -40,7 +41,7 @@
 
   &__question {
     font-family: var(--mont-600);
-    padding-right: rem(60);
+    padding-right: rem(50);
   }
 
   // .faq__answer
