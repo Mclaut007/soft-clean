@@ -16,7 +16,7 @@ gulp.task(
       "files:dev",
       "js:dev"
     ),
-    gulp.parallel("server:dev", "watch:dev")
+    gulp.parallel("browsersync:dev", "watch:dev")
   )
 );
 
@@ -32,6 +32,6 @@ gulp.task(
       "files:docs",
       "js:docs"
     ),
-    gulp.parallel("server:docs")
+    gulp.parallel("browsersync:docs")
   )
 );

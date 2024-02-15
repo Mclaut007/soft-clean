@@ -20,7 +20,8 @@
   // .extra-services__paragraph
 
   &__paragraph {
-    margin-bottom: proadrem(20, 48, $minWidthRemWithout, $maxWidthRemWithout);
+    // margin-bottom: proadrem(20, 48, $minWidthRemWithout, $maxWidthRemWithout);
+    margin-bottom: proadrem(20, 40, $minWidthRemWithout, $maxWidthRemWithout);
   }
 
   // .extra-services__items
@@ -44,7 +45,8 @@
     box-shadow: 0 rem(3) rem(15) 0 rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
-    gap: rem(25);
+    // gap: rem(25);
+    gap: rem(24);
     @media (max-width: $tablet) {
       border-radius: rem(20);
       padding: rem(15);

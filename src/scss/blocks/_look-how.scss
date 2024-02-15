@@ -3,7 +3,9 @@
   // .look-how__container
 
   &__container {
-    padding: proadrem(20, 47, $minWidthRemWithout, $maxWidthRemWithout) rem(15)
+    // padding: proadrem(20, 47, $minWidthRemWithout, $maxWidthRemWithout) rem(15)
+    //   proadrem(30, 60, $minWidthRemWithout, $maxWidthRemWithout);
+    padding: proadrem(20, 48, $minWidthRemWithout, $maxWidthRemWithout) rem(15)
       proadrem(30, 60, $minWidthRemWithout, $maxWidthRemWithout);
   }
 
@@ -17,7 +19,8 @@
 
   &__paragraph {
     // margin-bottom: rem(48);
-    margin-bottom: proadrem(20, 48, $minWidthRemWithout, $maxWidthRemWithout);
+    // margin-bottom: proadrem(20, 48, $minWidthRemWithout, $maxWidthRemWithout);
+    margin-bottom: proadrem(20, 40, $minWidthRemWithout, $maxWidthRemWithout);
   }
 
   // .look-how__rooms-buttons
@@ -93,7 +96,7 @@
 
   &__img-rooms-wrapper {
     position: relative;
-    padding-top: 54%;
+    padding-top: 54.5%;
     @media (max-width: $mobileSmall) {
       width: rem(500);
       height: rem(270);

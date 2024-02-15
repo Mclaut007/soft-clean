@@ -17,13 +17,15 @@
 
   &__container {
     // padding: rem(206) rem(15) rem(60);
-    padding: proadrem(50, 206, $minWidthRemWithout, $maxWidthRemWithout) rem(15) proadrem(30, 60, $minWidthRemWithout, $maxWidthRemWithout);
+    // padding: proadrem(50, 206, $minWidthRemWithout, $maxWidthRemWithout) rem(15) proadrem(30, 60, $minWidthRemWithout, $maxWidthRemWithout);
+    padding: proadrem(50, 204, $minWidthRemWithout, $maxWidthRemWithout) rem(15) proadrem(30, 60, $minWidthRemWithout, $maxWidthRemWithout);
   }
 
   // .kinds-of-cleaning__heading
 
   &__heading {
-    margin-bottom: rem(10);
+    // margin-bottom: rem(10);
+    margin-bottom: rem(11);
   }
 
   // .kinds-of-cleaning__paragraph
@@ -151,6 +153,7 @@
     margin-bottom: rem(9);
     width: 100%;
     max-width: rem(206);
+    min-height: rem(50);
     // width: rem(206);
     // max-width: 100%;
     text-transform: uppercase;

@@ -109,6 +109,7 @@
 
   &__input-text {
     margin-bottom: rem(10);
+    padding-left: rem(40);
   }
 
   // .get-price-list__button-submit
@@ -146,9 +147,11 @@
     // ._2
 
     &_book {
-      top: 50%;
+      // top: 50%;
+      top: 49%;
       transform: translateY(-57%);
-      right: rem(-190);
+      // right: rem(-190);
+      right: rem(-178);
       width: 86%;
       @media (max-width: $tablet) {
         top: 55%;
@@ -175,10 +178,10 @@
     // ._4
 
     &_circle {
-      top: 60%;
-      left: 50%;
+      top: 51%;
+      left: 50.3%;
       // width: rem(108);
-      width: 12%;
+      width: 11%;
       @media (max-width: $tablet) {
         left: 55%;
       }

@@ -3,7 +3,8 @@
 
   &__container {
     // padding-top: rem(96);
-    padding-top: proadrem(10, 96, $minWidthRemWithout, $maxWidthRemWithout);
+    // padding-top: proadrem(10, 96, $minWidthRemWithout, $maxWidthRemWithout);
+    padding-top: proadrem(10, 72, $minWidthRemWithout, $maxWidthRemWithout);
   }
 
   // .our-features__items

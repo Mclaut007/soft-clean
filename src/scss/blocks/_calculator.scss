@@ -109,7 +109,8 @@
   // .calculator__messengers
 
   &__messengers {
-    margin-bottom: rem(10);
+    // margin-bottom: rem(10);
+    margin-bottom: rem(15);
   }
 
   // .calculator__input-text
@@ -252,8 +253,10 @@
 
   &__img {
     position: absolute;
-    bottom: 0;
-    right: 0;
+    // bottom: 0;
+    bottom: rem(-14);
+    // right: 0;
+    right: rem(-19);
     max-height: 100%;
     z-index: -1;
     width: rem(610);

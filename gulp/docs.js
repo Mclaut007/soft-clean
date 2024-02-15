@@ -14,7 +14,8 @@ const autoprefixer = require("gulp-autoprefixer");
 const csso = require("gulp-csso");
 const webpCss = require("gulp-webp-css");
 
-const server = require("gulp-server-livereload");
+// const server = require("gulp-server-livereload");
+const browserSync = require("browser-sync").create();
 const clean = require("gulp-clean");
 const fs = require("fs");
 const sourceMaps = require("gulp-sourcemaps");
@@ -65,6 +66,7 @@ gulp.task("html:docs", function () {
       // .pipe(webpHTML())
       .pipe(htmlclean())
       .pipe(gulp.dest("./docs/"))
+      .pipe(browserSync.stream())
   );
 });
 
@@ -84,6 +86,7 @@ gulp.task("sass:docs", function () {
       .pipe(csso())
       .pipe(sourceMaps.write())
       .pipe(gulp.dest("./docs/css/"))
+      .pipe(browserSync.stream())
   );
 });
 
@@ -100,6 +103,7 @@ gulp.task("images:docs", function () {
       // imagemin - сжимает картинки
       .pipe(imagemin({ verbose: true }))
       .pipe(gulp.dest("./docs/img/"))
+      .pipe(browserSync.stream())
   );
 });
 
@@ -107,14 +111,16 @@ gulp.task("fonts:docs", function () {
   return gulp
     .src("./src/fonts/**/*")
     .pipe(changed("./docs/fonts/"))
-    .pipe(gulp.dest("./docs/fonts/"));
+    .pipe(gulp.dest("./docs/fonts/"))
+    .pipe(browserSync.stream());
 });
 
 gulp.task("files:docs", function () {
   return gulp
     .src("./src/files/**/*")
     .pipe(changed("./docs/files/"))
-    .pipe(gulp.dest("./docs/files/"));
+    .pipe(gulp.dest("./docs/files/"))
+    .pipe(browserSync.stream());
 });
 
 gulp.task("js:docs", function () {
@@ -123,15 +129,24 @@ gulp.task("js:docs", function () {
     .pipe(changed("./docs/js/"))
     .pipe(plumber(plumberNotify("JS")))
     .pipe(babel())
-    .pipe(webpack(require("../webpack.config.js")))
-    .pipe(gulp.dest("./docs/js"));
+    .pipe(webpack(require("./../webpack.config.js")))
+    .pipe(gulp.dest("./docs/js"))
+    .pipe(browserSync.stream());
 });
 
-const serverOptions = {
-  livereload: true,
-  open: true,
-};
+// const serverOptions = {
+//   livereload: true,
+//   open: true,
+// };
 
-gulp.task("server:docs", function () {
-  return gulp.src("./docs/").pipe(server(serverOptions));
+// gulp.task("server:docs", function () {
+//   return gulp.src("./docs/").pipe(server(serverOptions));
+// });
+
+gulp.task("browsersync:docs", function () {
+  browserSync.init({
+    server: {
+      baseDir: "./docs/",
+    },
+  });
 });

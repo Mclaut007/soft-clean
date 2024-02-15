@@ -10,7 +10,9 @@
 
   &__container {
     // padding: rem(135) rem(15) rem(151);
-    padding: proadrem(50, 135, $minWidthRemWithout, $maxWidthRemWithout) rem(15)
+    // padding: proadrem(50, 135, $minWidthRemWithout, $maxWidthRemWithout) rem(15)
+    //   proadrem(40, 151, $minWidthRemWithout, $maxWidthRemWithout);
+    padding: proadrem(50, 134, $minWidthRemWithout, $maxWidthRemWithout) rem(15)
       proadrem(40, 151, $minWidthRemWithout, $maxWidthRemWithout);
     position: relative;
   }
@@ -58,9 +60,11 @@
     // width: rem(433);
     width: 41%;
     position: absolute;
-    bottom: rem(133);
+    // bottom: rem(133);
+    bottom: rem(168);
     // right: rem(72);
-    right: 6.7%;
+    // right: 6.7%;
+    right: 6.9%;
     @media (max-width: $tablet) {
       right: 5%;
     }
@@ -74,9 +78,9 @@
 }
 
 .gift-card {
-  // .gift-card__img
   border-radius: rem(30);
-  padding: rem(17) rem(20) rem(23) rem(24);
+  // padding: rem(17) rem(20) rem(23) rem(24);
+  padding: rem(16) rem(20) rem(23) rem(22);
   display: flex;
   align-items: center;
   gap: rem(23);
@@ -87,6 +91,7 @@
     padding: rem(20);
     gap: rem(20);
   }
+  // .gift-card__img
   &__img {
     width: rem(70);
     // height: rem(70);
@@ -112,6 +117,7 @@
   // .gift-card__text
 
   &__text {
+    font-size: rem(12);
     color: var(--gray-color);
     margin-bottom: rem(10);
   }

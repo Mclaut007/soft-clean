@@ -2,7 +2,8 @@ const gulp = require("gulp");
 const fileInclude = require("gulp-file-include");
 const sass = require("gulp-sass")(require("sass"));
 const sassGlob = require("gulp-sass-glob");
-const server = require("gulp-server-livereload");
+// const server = require("gulp-server-livereload");
+const browserSync = require("browser-sync").create();
 const clean = require("gulp-clean");
 const fs = require("fs");
 const sourceMaps = require("gulp-sourcemaps");
@@ -45,8 +46,9 @@ gulp.task("html:dev", function () {
     .pipe(changed("./build/", { hasChanged: changed.compareContents }))
     .pipe(plumber(plumberNotify("HTML")))
     .pipe(fileInclude(fileIncludeSetting))
-    .pipe(gulp.dest("./build/"));
- });
+    .pipe(gulp.dest("./build/"))
+    .pipe(browserSync.stream());
+});
 
 gulp.task("sass:dev", function () {
   return (
@@ -61,6 +63,7 @@ gulp.task("sass:dev", function () {
       // Группировка медиазапросов. Лучше не использовать во время разработки. Потому что, в частности, появляются баги в работе sourceMaps. Плюс, имеет смысл использовать при mobile first (на мой взгляд).
       .pipe(sourceMaps.write())
       .pipe(gulp.dest("./build/css/"))
+      .pipe(browserSync.stream())
   );
 });
 
@@ -73,6 +76,7 @@ gulp.task("images:dev", function () {
       // imagemin - сжимает картинки
       // .pipe(imagemin({ verbose: true }))
       .pipe(gulp.dest("./build/img/"))
+      .pipe(browserSync.stream())
   );
 });
 
@@ -80,14 +84,16 @@ gulp.task("fonts:dev", function () {
   return gulp
     .src("./src/fonts/**/*")
     .pipe(changed("./build/fonts/"))
-    .pipe(gulp.dest("./build/fonts/"));
+    .pipe(gulp.dest("./build/fonts/"))
+    .pipe(browserSync.stream());
 });
 
 gulp.task("files:dev", function () {
   return gulp
     .src("./src/files/**/*")
     .pipe(changed("./build/files/"))
-    .pipe(gulp.dest("./build/files/"));
+    .pipe(gulp.dest("./build/files/"))
+    .pipe(browserSync.stream());
 });
 
 gulp.task("js:dev", function () {
@@ -99,16 +105,25 @@ gulp.task("js:dev", function () {
       // .pipe(babel())
       .pipe(webpack(require("./../webpack.config.js")))
       .pipe(gulp.dest("./build/js"))
+      .pipe(browserSync.stream())
   );
 });
 
-const serverOptions = {
-  livereload: true,
-  open: true,
-};
+// const serverOptions = {
+//   livereload: true,
+//   open: true,
+// };
 
-gulp.task("server:dev", function () {
-  return gulp.src("./build/").pipe(server(serverOptions));
+// gulp.task("server:dev", function () {
+//   return gulp.src("./build/").pipe(server(serverOptions));
+// });
+
+gulp.task("browsersync:dev", function () {
+  browserSync.init({
+    server: {
+      baseDir: "./build/",
+    },
+  });
 });
 
 gulp.task("watch:dev", function () {

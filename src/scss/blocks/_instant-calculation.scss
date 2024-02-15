@@ -3,7 +3,9 @@
   // .instant-calculation__container
 
   &__container {
-    padding: proadrem(30, 138, $minWidthRemWithout, $maxWidthRemWithout) rem(15)
+    // padding: proadrem(30, 138, $minWidthRemWithout, $maxWidthRemWithout) rem(15)
+    //   proadrem(30, 210, $minWidthRemWithout, $maxWidthRemWithout);
+    padding: proadrem(30, 139, $minWidthRemWithout, $maxWidthRemWithout) rem(15)
       proadrem(30, 210, $minWidthRemWithout, $maxWidthRemWithout);
     position: relative;
   }
@@ -23,7 +25,8 @@
 
   &__heading {
     text-align: left;
-    margin-bottom: rem(10);
+    // margin-bottom: rem(10);
+    margin-bottom: rem(11);
   }
 
   // .instant-calculation__paragraph
@@ -31,7 +34,8 @@
   &__paragraph {
     text-align: left;
     // margin-bottom: rem(41);
-    margin-bottom: proadrem(20, 41, $minWidthRemWithout, $maxWidthRemWithout);
+    // margin-bottom: proadrem(20, 41, $minWidthRemWithout, $maxWidthRemWithout);
+    margin-bottom: proadrem(20, 39, $minWidthRemWithout, $maxWidthRemWithout);
   }
 
   // .instant-calculation__messengers-block
@@ -41,7 +45,8 @@
     border-radius: rem(30);
     box-shadow: 0 rem(5) rem(20) 0 rgba(0, 0, 0, 0.1);
     background: #fff;
-    padding: rem(35) rem(35) rem(25);
+    // padding: rem(35) rem(35) rem(25);
+    padding: rem(33) rem(35) rem(33);
     @media (max-width: $mobileMiddle) {
       max-width: 100%;
       padding: rem(25);
@@ -126,9 +131,10 @@
 
   &__img-phone {
     position: absolute;
-    bottom: proadrem(0, 10, $minWidthRemWithout, $maxWidthRemWithout);
-    // bottom: proadrem(0, 30, $minWidthRemWithout, $maxWidthRemWithout);
-    right: rem(-63);
+    // bottom: proadrem(0, 10, $minWidthRemWithout, $maxWidthRemWithout);
+    bottom: proadrem(0, 25, $minWidthRemWithout, $maxWidthRemWithout);
+    // right: rem(-63);
+    right: rem(-48);
     z-index: 1;
     width: 79%;
     @media (max-width: $tablet) {

@@ -29,7 +29,8 @@
     // font-size: rem(20);
     font-size: proadrem(18, 20, $minWidthRemWithout, $maxWidthRemWithout);
     max-width: rem(357);
-    margin-bottom: proadrem(15, 32, $minWidthRemWithout, $maxWidthRemWithout);
+    // margin-bottom: proadrem(15, 32, $minWidthRemWithout, $maxWidthRemWithout);
+    margin-bottom: proadrem(15, 22, $minWidthRemWithout, $maxWidthRemWithout);
     position: relative;
     z-index: 1;
     @media (max-width: $mobileSmall) {

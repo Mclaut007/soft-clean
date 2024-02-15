@@ -2,7 +2,9 @@
   // .certificates__container
 
   &__container {
-    padding: proadrem(10, 49, $minWidthRemWithout, $maxWidthRemWithout) rem(15)
+    // padding: proadrem(10, 49, $minWidthRemWithout, $maxWidthRemWithout) rem(15)
+    //   proadrem(30, 120, $minWidthRemWithout, $maxWidthRemWithout);
+    padding: proadrem(10, 51, $minWidthRemWithout, $maxWidthRemWithout) rem(15)
       proadrem(30, 120, $minWidthRemWithout, $maxWidthRemWithout);
   }
 
@@ -15,7 +17,8 @@
   // .certificates__paragraph
 
   &__paragraph {
-    margin-bottom: proadrem(20, 36, $minWidthRemWithout, $maxWidthRemWithout);
+    // margin-bottom: proadrem(20, 36, $minWidthRemWithout, $maxWidthRemWithout);
+    margin-bottom: proadrem(20, 40, $minWidthRemWithout, $maxWidthRemWithout);
   }
 
   // .certificates__wrapper

@@ -16,7 +16,7 @@
       var(--blue-color);
     border-radius: rem(30);
     padding: proadrem(25, 49, $minWidthRemWithout, $maxWidthRemWithout)
-      proadrem(15, 56, $mobileSmallRemWithout, $maxWidthRemWithout)
+      proadrem(15, 57, $mobileSmallRemWithout, $maxWidthRemWithout)
       proadrem(15, 57, $minWidthRemWithout, $maxWidthRemWithout);
     color: var(--white-color);
     position: relative;
@@ -28,7 +28,8 @@
   &__heading {
     font-size: proadrem(20, 24, $minWidthRemWithout, $maxWidthRemWithout);
     max-width: rem(340);
-    margin-bottom: proadrem(20, 36, $minWidthRemWithout, $maxWidthRemWithout);
+    // margin-bottom: proadrem(20, 36, $minWidthRemWithout, $maxWidthRemWithout);
+    margin-bottom: proadrem(20, 40, $minWidthRemWithout, $maxWidthRemWithout);
     position: relative;
     z-index: 2;
     @media (max-width: $mobileSmall) {
@@ -57,13 +58,15 @@
 
   &__button-submit {
     width: 100%;
-    margin-bottom: rem(24);
+    // margin-bottom: rem(24);
+    margin-bottom: rem(25);
   }
 
   // .order-cleaning__text
 
   &__text {
-    margin-bottom: rem(19);
+    // margin-bottom: rem(19);
+    margin-bottom: rem(15);
     @media (max-width: $mobileSmall) {
       text-align: center;
     }
@@ -72,7 +75,8 @@
   // .order-cleaning__messengers
 
   &__messengers {
-    margin-bottom: rem(24);
+    // margin-bottom: rem(24);
+    margin-bottom: rem(22);
   }
 
   // .order-cleaning__phone-block
@@ -125,7 +129,8 @@
   &__main-img {
     width: 61%;
     position: absolute;
-    bottom: rem(26);
+    // bottom: rem(26);
+    bottom: rem(8);
     right: 0;
     @media (max-width: $tablet) {
       // width: 55%;

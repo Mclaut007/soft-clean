@@ -10,13 +10,15 @@
   // .other-companies-problems__subtitle
 
   &__subtitle {
-    margin: 0 auto rem(20); 
+    // margin: 0 auto rem(20); 
+    margin: 0 auto rem(18); 
   }
 
   // .other-companies-problems__heading
 
   &__heading {
-    margin: 0 auto rem(10);
+    // margin: 0 auto rem(10);
+    margin: 0 auto rem(11);
     max-width: rem(894);
   }
 
@@ -80,6 +82,7 @@
     &_4 {
       width: rem(195);
       top: rem(-7);
+      left: rem(-5);
       @media (max-width: $mobile) {
         max-width: 54%;
         left: 10%;

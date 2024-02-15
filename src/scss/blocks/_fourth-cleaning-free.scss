@@ -47,6 +47,7 @@
     min-width: rem(275);
     position: relative;
     z-index: 1;
+    margin-left: rem(5);
     @media (max-width: $mobileMiddle) {
       margin-left: auto;
       margin-right: auto;
@@ -57,10 +58,12 @@
 
   &__bg {
     // width: rem(608);
-    width: 58%;
+    width: 59%;
     position: absolute;
-    top: rem(-70);
-    right: rem(-90);
+    // top: rem(-70);
+    // right: rem(-90);
+    top: rem(-74);
+    right: rem(-78);
     @media (max-width: $tablet) {
       width: 45%;
       top: rem(-10);

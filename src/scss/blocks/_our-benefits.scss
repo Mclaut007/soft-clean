@@ -3,14 +3,17 @@
   // .our-benefits__container
 
   &__container {
-    padding-top: proadrem(25, 53, $minWidthRemWithout, $maxWidthRemWithout);
+    // padding-top: proadrem(25, 53, $minWidthRemWithout, $maxWidthRemWithout);
+    padding-top: proadrem(25, 51, $minWidthRemWithout, $maxWidthRemWithout);
     padding-bottom: rem(30);
   }
 
   // .our-benefits__heading
 
   &__heading {
-    margin-bottom: rem(16);
+    // margin-bottom: rem(16);
+    margin: 0 auto rem(16);
+    max-width: rem(560);
   }
 
   // .our-benefits__subtitle
@@ -20,6 +23,7 @@
     margin: 0 auto proadrem(20, 50, $minWidthRemWithout, $maxWidthRemWithout);
     padding: rem(15) proadrem(25, 47, $minWidthRemWithout, $maxWidthRemWithout);
     max-width: rem(650);
+    border-radius: rem(45);
   }
 
   // .our-benefits__cards

@@ -21,10 +21,10 @@
   &__container {
     padding: proadrem(30, 146, $minWidthRemWithout, $maxWidthRemWithout) rem(15)
       proadrem(30, 100, $minWidthRemWithout, $maxWidthRemWithout);
-    @media (max-width: $mobileSmall) {
-      margin-left: rem(-15);
-      margin-right: rem(-15);
-    }
+    // @media (max-width: $mobileSmall) {
+    //   margin-left: rem(-15);
+    //   margin-right: rem(-15);
+    // }
   }
 
   // .our-works__heading
@@ -36,7 +36,9 @@
   // .our-works__paragraph
 
   &__paragraph {
-    margin-bottom: proadrem(20, 54, $minWidthRemWithout, $maxWidthRemWithout);
+    // margin-bottom: proadrem(20, 54, $minWidthRemWithout, $maxWidthRemWithout);
+    margin: 0 auto proadrem(20, 50, $minWidthRemWithout, $maxWidthRemWithout);
+    max-width: rem(530);
   }
 
   // .our-works__wrapper
@@ -50,6 +52,9 @@
   &__swiper {
     margin: rem(-20) rem(-15);
     padding: rem(20) rem(15);
+    @media (max-width: $mobileSmall) {
+      padding: rem(20) 0;
+    }
   }
 
   // .our-works__swiper-wrapper
@@ -106,7 +111,8 @@
   &__slide-heading {
     font-family: var(--mont-800);
     font-size: rem(20);
-    margin-bottom: rem(25);
+    // margin-bottom: rem(25);
+    margin-bottom: rem(16);
     @media (max-width: $tablet) {
       margin-bottom: rem(12);
     }
@@ -140,8 +146,9 @@
     border-radius: rem(35);
     font-family: var(--mont-800);
     color: var(--blue-color);
-    line-height: 1.5;
+    line-height: 1;
     text-align: center;
+    // padding: rem(20) rem(29);
     padding: rem(20) rem(29);
     min-height: rem(60);
     display: flex;
@@ -149,7 +156,8 @@
     min-width: rem(206);
     justify-content: center;
     align-items: center;
-    margin-top: rem(13);
+    // margin-top: rem(13);
+    margin-top: rem(15);
   }
 
   // .our-works__swiper-pagination
@@ -184,7 +192,8 @@
     left: 0;
     transform: translate(-50%, -50%);
     @media (max-width: $mobileSmall) {
-      left: rem(5);
+      // left: rem(5);
+      left: rem(-10);
       transform: translateY(-50%);
     }
   }
@@ -206,7 +215,8 @@
     right: 0;
     transform: translate(50%, -50%);
     @media (max-width: $mobileSmall) {
-      right: rem(5);
+      // right: rem(5);
+      right: rem(-10);
       transform: translateY(-50%);
     }
   }
